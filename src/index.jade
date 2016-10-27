@@ -9,4 +9,40 @@ html
 		meta(width="device-width", initial-scale="1")
 		link(href="styles/default/css/style.css",rel="stylesheet")
 	body
-		span 123
+		.global-layout
+			.when
+				.when__date 7 ноября
+				.when__time 18:30
+				.when__place Центр своевременного искусства
+				.when__adress г.&thinsp;Орел, ул.&thinsp;Ленина 1. Здание типографии &laquo;Труд&raquo;
+			.what
+				.what__description Лекция-дискуссия о веб-дизайне
+				.what__title Разве так можно?<br>Нет, так нельзя
+					=" "
+					img(src="styles/default/css/img/pacman2.gif").what__img
+			.who.clearfix Говорить и показывать будет ОрелСайтСтрой
+				.who__item
+					img(src="styles/default/css/img/bogdan.jpg").who__img
+					.who__name Богдан Юкин
+					.who__info Front-end, верстка
+				.who__item
+					img(src="styles/default/css/img/denis.jpg").who__img
+					.who__name Денис Цветов
+					.who__info Самый главный там
+			.theme.clearfix
+				.theme__text.
+					Речь пойдет о смертных грехах в веб-дизайне, правилах хорошего и плохого тона, типографике, здравом смысле, наших ошибках и многом другом
+				.theme__img
+					img(src="styles/default/css/img/griffin.gif").theme__gif
+					| Мы столько раз это проходили
+			.for
+				.for__item.clearfix
+					img(src="styles/default/css/img/pac1.png").for__icon
+					.for__title Начинающим веб-дизанерам
+					.for__info подчерпнете знаний и нашего опыта, поймете что такое хорошо, а что такое плохо
+				.for-item.clearfix
+					img(src="styles/default/css/img/pac1.png").for__icon
+					.for__title Тем, кто уже занимается сайтами
+					.for__info узнаете что-то новое, поделитесь своими мыслями и опытом
+
+

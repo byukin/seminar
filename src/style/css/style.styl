@@ -1,16 +1,21 @@
 
+$max-width = 1230px
+$min-width = 640px
 $bluecolor = #317fb4
 $edit = #c2fcc4
 
-@import url('layout.css')
 @import url('fonts/museo/font.css')
-@import url('fonts/ptsans/font.css')
+@import url('fonts/ptserif/font.css')
 
 body
 	padding 0
 	margin 0
+	font-family 'Museo'
 	font-size 16px
+	font-weight 300
 	line-height 24px
+	background #222
+	color #fff
 .clearfix:after{
 	content "."
 	display block
@@ -27,6 +32,154 @@ a
 	color #fff
 	border-bottom none
 	padding-bottom 1px
+
+.global-layout
+	max-width $max-width
+	min-width $min-width
+	margin 0 auto
+	padding 30px
+	box-sizing border-box
+	position relative
+.when
+	margin-top 10px
+.when__date
+	font-size: calc( (100vw - 640px)/(1920 - 640) * (64 - 48) + 48px)
+	line-height 120%
+	font-weight bold
+	margin-bottom 5px
+.when__time
+	font-size 28px
+	line-height 1.2em
+	font-weight 300
+	display inline-block
+.when__time:after
+	content ""
+	display inline-block
+	width 10px
+	height 10px
+	border-radius 10px
+	background #FE667B
+	vertical-align middle
+	margin-left 10px
+	margin-right 7px
+.when__place
+	font-size 28px
+	line-height 1.2em
+	font-weight 300
+	display inline-block
+.when__adress
+	font-weight 300
+	font-style italic
+	margin-top 2px
+	color #999
+
+
+.what__description
+	font-size 28px
+	line-height 1.2em
+	font-weight 300
+	margin-top 160px
+	margin-bottom 7px
+.what__title
+	font-size: calc( (100vw - 640px)/(1920 - 640) * (88 - 64) + 64px)
+	line-height 100%
+	font-weight bold
+	margin-left -5px
+.what__img
+	width 220px
+	display inline
+	vertical-align middle
+
+
+.who
+	font-size 28px
+	line-height 1.3em
+	font-weight 300
+	margin-top 100px
+	margin-bottom 7px
+	border-top 5px solid blue
+	padding-top 30px
+	width 70%
+	transition-duration .3s
+	@media (max-width: 1150px)
+		width 100%
+.who__item
+	margin-top 40px
+	width 49%
+	float left
+	@media (max-width: 860px)
+		margin-top 40px
+		width 100%
+		float left
+.who__img
+	width 140px
+	border-radius 140px
+	display block
+	float left
+	margin-right 30px
+.who__name
+	font-size 20px
+	margin-top 40px
+	line-height 1em
+.who__info
+	font-size 16px
+	font-family 'PT Serif'
+	font-style italic
+
+.who
+	font-size 28px
+	line-height 1.3em
+	font-weight 300
+	margin-top 100px
+	margin-bottom 7px
+	border-top 10px solid blue
+	padding-top 30px
+	width 70%
+	transition-duration .3s
+.theme__text
+	font-size 28px
+	line-height 1.3em
+	font-weight 300
+	margin-top 100px
+	margin-bottom 7px
+	border-top 10px solid #FDEA04
+	padding-top 30px
+	width 55%
+	float left
+	transition-duration .3s
+.theme__img
+	width 38%
+	float right
+	margin-top 100px
+.theme__gif
+	width 100%
+	margin-bottom 10px
+.for
+	font-size 28px
+	line-height 1.3em
+	font-weight 300
+	margin-top 100px
+	margin-bottom 7px
+	border-top 10px solid #FB93F8
+	padding-top 30px
+	width 55%
+	float left
+	transition-duration .3s
+.for__item
+	margin-bottom 30px
+.for__icon
+	width 50px
+	display block
+	float left
+	margin-right 30px
+.for__info
+	font-size 18px
+	line-height 1.5em
+	font-weight normal
+	font-family 'PT Serif'
+	font-style italic
+	padding-left 80px
+
 
 
 
