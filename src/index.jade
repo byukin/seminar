@@ -35,7 +35,7 @@ html
 				.theme__img
 					img(src="styles/default/css/img/griffin.gif").theme__gif
 					| Мы столько раз это проходили
-			.for Кому это надо?
+			.for.clearfix Кому это надо?
 				.for__item.clearfix
 					img(src="styles/default/css/img/pac1.png").for__icon
 					.for__title Начинающим веб-дизанерам
@@ -44,6 +44,11 @@ html
 					img(src="styles/default/css/img/pac2.png").for__icon
 					.for__title Тем, кто уже занимается сайтами
 					.for__info узнаете что-то новое, поделитесь своими мыслями и опытом
-			.price
+			.price Вход 100 рублей
+				.price__comment Для тех, кто запишется
+				form(action="/").price-form.clearfix
+					input(type="text" name="name" placeholder="Как вас зовут").price-form__input
+					input(type="text" name="phone" placeholder="Ваш телефон").price-form__input
+					button(type="submit").price-form__submit Записаться
 
 

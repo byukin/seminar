@@ -1,6 +1,6 @@
 
 $max-width = 1230px
-$min-width = 640px
+$min-width = 620px
 $bluecolor = #317fb4
 $edit = #c2fcc4
 
@@ -89,15 +89,13 @@ a
 	width 220px
 	display inline
 	vertical-align middle
-
-
 .who
 	font-size 28px
 	line-height 1.3em
 	font-weight 300
 	margin-top 100px
 	margin-bottom 7px
-	border-top 5px solid blue
+	border-top 10px solid blue
 	padding-top 30px
 	width 70%
 	transition-duration .3s
@@ -119,23 +117,14 @@ a
 	margin-right 30px
 .who__name
 	font-size 20px
+	line-height 30px
 	margin-top 40px
 	line-height 1em
 .who__info
 	font-size 16px
+	line-height 24px
 	font-family 'PT Serif'
 	font-style italic
-
-.who
-	font-size 28px
-	line-height 1.3em
-	font-weight 300
-	margin-top 100px
-	margin-bottom 7px
-	border-top 10px solid blue
-	padding-top 30px
-	width 70%
-	transition-duration .3s
 .theme__text
 	font-size 28px
 	line-height 1.3em
@@ -158,12 +147,11 @@ a
 	font-size 36px
 	line-height 1.3em
 	font-weight 300
-	margin-top 100px
+	margin-top 40px
 	margin-bottom 7px
 	border-top 10px solid #FB93F8
 	padding-top 30px
 	width 55%
-	float left
 	transition-duration .3s
 .for__item
 	margin-top 30px
@@ -175,6 +163,7 @@ a
 .for__title
 	font-size 28px
 	line-height 1.3em
+	padding-left 80px
 .for__info
 	font-size 18px
 	line-height 1.5em
@@ -182,7 +171,67 @@ a
 	font-family 'PT Serif'
 	font-style italic
 	padding-left 80px
-
-
+.price
+	margin-top 100px
+	font-size 36px
+	line-height 1.2em
+	font-weight bold
+	width 48%
+.price__comment
+	font-size 16px
+	line-height 22px
+	margin-top 5px
+	font-weight normal
+	font-style italic
+	color #999
+.price-form
+	font-size 28px
+	line-height 1.5em
+	margin-top 30px
+	position relative
+.price-form__input
+	font-size 28px
+	font-family 'Museo'
+	line-height 1.5em
+	background transparent
+	padding-top 10px
+	padding-bottom 5px
+	margin-bottom 10px
+	border none
+	border-bottom 1px solid #999
+	transition-duration .3s
+	width 100%
+	color #fff
+	&:focus
+		outline none
+		border-bottom 1px solid #fff
+.price-form__submit
+	background none
+	border 2px solid #fff
+	box-sizing border-box
+	padding 10px 20px 10px 20px
+	font-size 24px
+	font-family 'Museo'
+	color #fff
+	margin-top 20px
+	position relative
+	display block
+	cursor pointer
+	float right
+	transition-duration .3s
+	&:hover
+		background #fff
+		color #000
+.price-form__submit:after
+	content ""
+	display block
+	position absolute
+	top 5px
+	left 5px
+	width 169px
+	height 50px
+	border-right 2px solid #fff
+	border-bottom 2px solid #fff
+	z-index -1
 
 
