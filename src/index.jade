@@ -20,12 +20,12 @@ html
 				.what__title Разве так можно?<br>Нет, так нельзя
 					=" "
 					img(src="styles/default/css/img/pacman2.gif").what__img
-			.who.clearfix Говорить и показывать будет ОрелСайтСтрой
-				.who__item
+			.who.clearfix <div>Говорить и показывать будет ОрелСайтСтрой</div>
+				.who__item.clearfix
 					img(src="styles/default/css/img/bogdan.jpg").who__img
 					.who__name Богдан Юкин
 					.who__info Front-end, верстка
-				.who__item
+				.who__item.clearfix
 					img(src="styles/default/css/img/denis.jpg").who__img
 					.who__name Денис Цветов
 					.who__info Самый главный там
@@ -52,5 +52,14 @@ html
 					button(type="submit").price-form__submit Записаться
 			.price__two 200 рублей
 				.price__comment Без записи
+			.likely.likely-light
+				.vkontakte Поделиться
+				.telegram Отправить
+				.facebook Поделиться
+				.twitter Твитнуть
+				.gplus Плюсануть
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+		script(src="styles/default/js-libs/likely/likely.js")
+		script(src="styles/default/js/main.js")
 
 
