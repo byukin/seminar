@@ -43,12 +43,12 @@ a
 	margin-top 10px
 .when__date
 	font-size: calc( (100vw - 640px)/(1920 - 640) * (64 - 48) + 48px)
-	line-height 120%
+	line-height 1.2em
 	font-weight bold
 	margin-bottom 5px
 .when__time
 	font-size 28px
-	line-height 1.2em
+	line-height 36px
 	font-weight 300
 	display inline-block
 .when__time:after
@@ -57,16 +57,18 @@ a
 	width 10px
 	height 10px
 	border-radius 10px
-	background #FE667B
+	background rgba(255,255,255,0.6)
 	vertical-align middle
 	margin-left 10px
 	margin-right 7px
 .when__place
 	font-size 28px
-	line-height 1.2em
+	line-height 36px
 	font-weight 300
 	display inline-block
 .when__adress
+	font-size 17px
+	line-height 23px
 	font-weight 300
 	font-style italic
 	margin-top 2px
@@ -90,7 +92,7 @@ a
 	vertical-align middle
 .who
 	font-size 28px
-	line-height 1.3em
+	line-height 36px
 	font-weight 300
 	margin-top 100px
 	margin-bottom 7px
@@ -106,7 +108,7 @@ a
 	float left
 	@media (max-width: 768px)
 		text-align center
-		width 48%
+		width 49%
 .who__img
 	width 100px
 	border-radius 100px
@@ -116,12 +118,14 @@ a
 		float none
 		display inline
 		margin-right 0px
+		width 70px
 .who__name
 	font-size 20px
 	line-height 28px
 	margin-top 20px
 	@media (max-width: 768px)
 		margin-top 10px
+		font-size 17px
 .who__info
 	font-size 17px
 	line-height 1.5em
@@ -204,7 +208,7 @@ a
 	@media (max-width: 768px)
 		width 100%
 		float none
-		margin-top -20px
+		margin-top 0px
 .price__comment
 	font-size 17px
 	line-height 22px
@@ -272,5 +276,9 @@ a
 	display block
 	height 0
 	visibility hidden
+::-webkit-input-placeholder {font-weight:300;}
+::-moz-placeholder          {font-weight:300;}/* Firefox 19+ */
+:-moz-placeholder           {font-weight:300;}/* Firefox 18- */
+:-ms-input-placeholder      {font-weight:300;}
 
 

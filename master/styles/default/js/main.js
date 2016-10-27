@@ -1,8 +1,8 @@
 var colors = new Array(
-	[0,0,0],
-	[40,58,60],
+	[10,10,10],
+	[40,40,40],
 	[50,50,50],
-	[7,1,52]);
+	[30,30,30]);
 
 var step = 0;
 //color table indices for:
@@ -55,4 +55,4 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
   }
 }
 
-setInterval(updateGradient,30);
+setInterval(updateGradient,10);
