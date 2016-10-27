@@ -122,8 +122,8 @@ a {
   }
 }
 .who__img {
-  width: 140px;
-  border-radius: 140px;
+  width: 120px;
+  border-radius: 120px;
   display: block;
   float: left;
   margin-right: 30px;
@@ -139,6 +139,7 @@ a {
   line-height: 24px;
   font-family: 'PT Serif';
   font-style: italic;
+  color: #999;
 }
 .theme__text {
   font-size: 28px;
@@ -198,6 +199,7 @@ a {
   font-family: 'PT Serif';
   font-style: italic;
   padding-left: 80px;
+  color: #999;
 }
 .price {
   margin-top: 100px;
