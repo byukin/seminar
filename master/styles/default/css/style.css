@@ -1,12 +1,15 @@
 @import url("fonts/museo/font.css");
 @import url("../js-libs/likely/likely.css");
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Museo';
+  line-height: 1.414;
+  font-weight: 300;
+}
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Museo';
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 24px;
   background: #222;
   color: #fff;
 }
@@ -41,14 +44,12 @@ a {
   margin-top: 10px;
 }
 .when__date {
-  font-size: calc((100vw - 640px) / (1920 - 640) * (64 - 48) + 48px);
-  line-height: 1.2em;
+  font-size: 3.25rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
 .when__time {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 1.75rem;
   font-weight: 300;
   display: inline-block;
 }
@@ -58,35 +59,32 @@ a {
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.6);
+  background: #fc687b;
   vertical-align: middle;
   margin-left: 10px;
   margin-right: 7px;
 }
 .when__place {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 1.75rem;
   font-weight: 300;
   display: inline-block;
 }
 .when__adress {
-  font-size: 17px;
-  line-height: 23px;
+  font-size: 1rem;
   font-weight: 300;
   font-style: italic;
   margin-top: 2px;
   color: rgba(255,255,255,0.6);
 }
 .what__description {
-  font-size: 28px;
-  line-height: 1.2em;
+  font-size: 1.75rem;
   font-weight: 300;
   margin-top: 160px;
   margin-bottom: 7px;
 }
 .what__title {
-  font-size: calc((100vw - 640px) / (1920 - 640) * (88 - 64) + 64px);
-  line-height: 100%;
+  font-size: 4.25rem;
+  line-height: 1;
   font-weight: bold;
   margin-left: -5px;
 }
@@ -96,9 +94,6 @@ a {
   vertical-align: middle;
 }
 .who {
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 300;
   margin-top: 100px;
   margin-bottom: 7px;
   border-top: 10px solid #00f;
@@ -110,6 +105,10 @@ a {
   .who {
     width: 100%;
   }
+}
+.who__text {
+  font-size: 1.75rem;
+  font-weight: 300;
 }
 .who__item {
   margin-top: 30px;
@@ -137,25 +136,21 @@ a {
   }
 }
 .who__name {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
   margin-top: 20px;
 }
 @media (max-width: 768px) {
   .who__name {
-    margin-top: 10px;
-    font-size: 17px;
+    margin-top: 20px;
   }
 }
 .who__info {
-  font-size: 17px;
-  line-height: 1.5em;
+  font-size: 1rem;
   font-style: italic;
   color: rgba(255,255,255,0.6);
 }
 .theme__text {
-  font-size: 28px;
-  line-height: 1.3em;
+  font-size: 1.75rem;
   font-weight: 300;
   margin-top: 100px;
   margin-bottom: 7px;
@@ -165,18 +160,20 @@ a {
   float: left;
   transition-duration: 0.3s;
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .theme__text {
     width: 100%;
     float: none;
   }
 }
 .theme__img {
+  font-size: 1.25rem;
   width: 38%;
   float: right;
   margin-top: 100px;
+  color: rgba(255,255,255,0.6);
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .theme__img {
     width: 100%;
     float: none;
@@ -187,9 +184,6 @@ a {
   margin-bottom: 10px;
 }
 .for {
-  font-size: 36px;
-  line-height: 1.3em;
-  font-weight: 300;
   margin-top: 80px;
   margin-bottom: 7px;
   border-top: 10px solid #fb93f8;
@@ -202,6 +196,10 @@ a {
     width: 100%;
   }
 }
+.for__text {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
 .for__item {
   margin-top: 30px;
 }
@@ -212,13 +210,11 @@ a {
   margin-right: 30px;
 }
 .for__title {
-  font-size: 28px;
-  line-height: 1.3em;
+  font-size: 1.75rem;
   padding-left: 80px;
 }
 .for__info {
-  font-size: 17px;
-  line-height: 1.5em;
+  font-size: 1rem;
   font-weight: normal;
   font-weight: 300;
   font-style: italic;
@@ -226,9 +222,8 @@ a {
   color: rgba(255,255,255,0.6);
 }
 .price {
+  font-size: 2.25rem;
   margin-top: 100px;
-  font-size: 36px;
-  line-height: 1.2em;
   font-weight: bold;
   width: 48%;
   float: left;
@@ -241,9 +236,8 @@ a {
   }
 }
 .price__two {
+  font-size: 2.25rem;
   margin-top: 100px;
-  font-size: 36px;
-  line-height: 1.2em;
   font-weight: bold;
   width: 48%;
   margin-bottom: 60px;
@@ -257,23 +251,20 @@ a {
   }
 }
 .price__comment {
-  font-size: 17px;
-  line-height: 22px;
-  margin-top: 5px;
+  font-size: 1.25rem;
+  margin-top: 0px;
   font-weight: 300;
   font-style: italic;
   color: rgba(255,255,255,0.5);
 }
 .price-form {
-  font-size: 28px;
-  line-height: 1.5em;
+  font-size: 1.5rem;
   margin-top: 30px;
   position: relative;
 }
 .price-form__input {
-  font-size: 28px;
+  font-size: 1.5rem;
   font-family: 'Museo';
-  line-height: 1.5em;
   background: transparent;
   padding-top: 10px;
   padding-bottom: 5px;
