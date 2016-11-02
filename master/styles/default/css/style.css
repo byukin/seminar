@@ -400,6 +400,9 @@ a {
 .goodshare i {
   margin-right: 5px;
 }
+.goodshare span {
+  opacity: 0.4;
+}
 .goodshare.vk {
   background: #4d7198;
 }
