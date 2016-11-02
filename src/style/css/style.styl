@@ -181,29 +181,29 @@ a
 	color rgba(255,255,255,0.6)
 .price
 	font-size 2.25rem
-	margin-top 100px
+	margin-top 140px
 	font-weight bold
-	width 48%
-	float left
-	margin-bottom 60px
-	@media (max-width: 768px)
-		width 100%
-		float none
+	width 100%
+	background rgba(255,255,255,.06)
+	padding 20px
+	margin-left -20px
+	border-radius 10px
 .price__two
 	font-size 2.25rem
-	margin-top 100px
+	margin-top 20px
 	font-weight bold
 	width 48%
-	margin-bottom 60px
-	float right
+	margin-bottom 100px
+	padding-top 15px
 	@media (max-width: 768px)
 		width 100%
 		float none
 		margin-top 0px
 .price__comment
 	font-size 1.25rem
-	margin-top 0px
+	margin-top -5px
 	font-weight 300
+	margin-bottom 40px
 	font-style italic
 	color rgba(255,255,255,0.5)
 .price-form
@@ -257,7 +257,10 @@ a
 .likely
 	display block
 	width 100%
-	margin-bottom 40px
+	margin-top 40px
+.ya-share2
+	margin-top 40px
+	margin-bottom 10px
 .likely:before
 	content "."
 	clear both
@@ -270,6 +273,13 @@ a
 :-moz-placeholder           {font-weight:300;}/* Firefox 18- */
 :-ms-input-placeholder      {font-weight:300;}
 .dev
+	margin-left -10px
+.dev:before
+	content "."
+	clear both
+	display block
+	height 0
+	visibility hidden
 	margin-left -10px
 .success
 	display none
@@ -296,5 +306,33 @@ a
 	text-align center
 	font-size 1rem
 	color rgba(255,255,255,0.6)
+.goodshare
+	color #fff
+	padding 10px 15px 10px 15px
+	font-size 1rem
+	font-weight normal
+	cursor pointer
+	float left
+	width 20%
+	box-sizing border-box
+	text-align center
+	@media (max-width: 750px)
+		width 100%
+		float none
+		margin-top 0
+		padding 25px 15px 25px 15px
+		font-size 1.5rem
+.goodshare i
+	margin-right 5px
+.goodshare.vk
+	background #4d7198
+.goodshare.fb
+	background #3b5998
+.goodshare.tg
+	background #35ADE2
+.goodshare.wa
+	background #49E965
+.goodshare.vi
+	background #7D519E
 
 

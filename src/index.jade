@@ -35,7 +35,7 @@ html
 					.who__info Самый главный там
 			.theme.clearfix
 				.theme__text.
-					Речь пойдет о&nbsp;смертных грехах в&nbsp;веб-дизайне, правилах хорошего и&nbsp;плохого тона, типографике, здравом смысле, наших ошибках и&nbsp;многом другом
+					Речь пойдет о&nbsp;смертных грехах в&nbsp;веб-дизайне. Что отличает сайт за&nbsp;10К от&nbsp;сайта за&nbsp;100К. Правилах хорошего и&nbsp;плохого тона, типографике, выравнивании текста, типографах, отступах и&nbsp;здравом смысле, наших ошибках и&nbsp;многом другом
 				.theme__img
 					img(src="styles/default/css/img/griffin.gif").theme__gif
 					| Мы столько раз это проходили
@@ -49,25 +49,32 @@ html
 					img(src="styles/default/css/img/pac2.png").for__icon
 					.for__title Тем, кто уже занимается сайтами
 					.for__info узнаете что-то новое, поделитесь своими мыслями и&nbsp;опытом
-			.price Вход 100&nbsp;рублей
-				.price__comment Для тех, кто запишется
-				form(action="/").price-form.clearfix
+			.price.clearfix Вход бесплатно
+				.price__comment если поделитесь с друзьями:
+				.goodshare(data-type="vk").vk <i class="fa fa-vk" aria-hidden="true"></i> Вконтакте
+					span(data-counter="vk")
+				.goodshare(data-type="fb").fb <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+					span(data-counter="fb")
+				.goodshare(data-type="tg").tg <i class="fa fa-telegram" aria-hidden="true"></i> Telegram
+					span(data-counter="tg")
+				.goodshare(data-type="wa").wa <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp
+					span(data-counter="wa")
+				.goodshare(data-type="vi").vi <i class="fa fa-phone" aria-hidden="true"></i> Viber
+					span(data-counter="vi")
+				//.ya-share2(data-services="vkontakte,facebook,viber,whatsapp,telegram",data-counter="" ,data-size="m")
+				//form(action="/").price-form.clearfix
 					input(type="text" name="name" placeholder="Как вас зовут").price-form__input
 					input(type="text" name="phone" placeholder="Ваш телефон").price-form__input
 					button(type="submit").price-form__submit Записаться
 			.price__two 200 рублей
-				.price__comment Без записи
-			.likely.likely-light
-				.vkontakte Поделиться
-				.telegram Отправить
-				.facebook Поделиться
-				.twitter Твитнуть
-				.gplus Плюсануть
+				.price__comment приходите инкогнито, оплата на входе
 			.dev
 				img(src="styles/default/css/img/orelsite.png")
 
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
 		script(src="styles/default/js-libs/likely/likely.js")
+		script(src="https://cdn.jsdelivr.net/jquery.goodshare.js/3.2.8/goodshare.min.js")
+		script(src="https://use.fontawesome.com/e04476514d.js")
 		// script(src="styles/default/js/main.js")
 
 
